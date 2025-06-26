@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: notices-frontend
+    env: static
+    plan: free
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./build
+    envVars:
+      - key: REACT_APP_API_URL
+        value: https://notices-backend.onrender.com 

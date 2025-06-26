@@ -1,0 +1,107 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+  padding: 2rem 0;
+}
+
+.notice-card {
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.notice-header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+  padding: 1rem;
+}
+
+.notice-body {
+  padding: 1.5rem;
+}
+
+.notice-footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #e9ecef;
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.auth-container {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.auth-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #4a6da7;
+}
+
+.dashboard-header {
+  margin-bottom: 2rem;
+}
+
+.user-table th, .user-table td {
+  vertical-align: middle;
+}
+
+.action-buttons .btn {
+  margin-right: 0.5rem;
+}
+
+.action-buttons .btn:last-child {
+  margin-right: 0;
+}
+
+.notice-detail-container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.notice-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  color: #6c757d;
+}
+
+.notice-content {
+  white-space: pre-line;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .auth-container {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+  
+  .notice-detail-container {
+    padding: 1.5rem;
+  }
+  
+  .action-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .action-buttons .btn {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+}
